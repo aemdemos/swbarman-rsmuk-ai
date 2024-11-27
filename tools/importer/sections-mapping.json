@@ -1,0 +1,230 @@
+{
+  "url": "https://www.rsmuk.com/",
+  "sanitizedPath": "/index",
+  "autoDetect": false,
+  "mapping": [
+    {
+      "id": "1",
+      "path": "/nav",
+      "sections": [
+        {
+          "id": "1-1",
+          "blocks": [
+            {
+              "id": "box-id-1831135597",
+              "x": 489,
+              "y": 0,
+              "width": 1920,
+              "height": 120,
+              "xpath": "/html[1]/body[1]/div[1]/header[1]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgb(148, 0, 211)",
+              "mapping": "header",
+              "customBlockName": "header"
+            }
+          ],
+          "settings": {}
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "path": "/index",
+      "sections": [
+        {
+          "id": "2-1",
+          "blocks": [
+            {
+              "id": "box-id-1639521667",
+              "x": 0,
+              "y": 765,
+              "width": 1476,
+              "height": 484,
+              "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgba(75, 0, 130, 0.4)",
+              "mapping": "defaultContent",
+              "customBlockName": ""
+            },
+            {
+              "id": "box-id-1639521698",
+              "x": 0,
+              "y": 1249,
+              "width": 1476,
+              "height": 1024,
+              "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[3]",
+              "layout": {
+                "numCols": 2,
+                "numRows": 2
+              },
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]",
+                  "xpathWithDetails": "id(\"content\")/div[@class=\"row\"]/div[@class=\"component rcss-two-column-cta col-12\"]/div[@class=\"component-content\"]/div[@class=\"container column-cta mt-3 mb-2 px-0\"]/div[@class=\"row\"]/div[@class=\"col-md-6\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]",
+                  "xpathWithDetails": "id(\"content\")/div[@class=\"row\"]/div[@class=\"component rcss-two-column-cta col-12\"]/div[@class=\"component-content\"]/div[@class=\"container column-cta mt-3 mb-2 px-0\"]/div[@class=\"row\"]/div[@class=\"col-md-6\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[3]",
+                  "xpathWithDetails": "id(\"content\")/div[@class=\"row\"]/div[@class=\"component rcss-two-column-cta col-12\"]/div[@class=\"component-content\"]/div[@class=\"container column-cta mt-3 mb-2 px-0\"]/div[@class=\"row\"]/div[@class=\"col-md-6\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[4]",
+                  "xpathWithDetails": "id(\"content\")/div[@class=\"row\"]/div[@class=\"component rcss-two-column-cta col-12\"]/div[@class=\"component-content\"]/div[@class=\"container column-cta mt-3 mb-2 px-0\"]/div[@class=\"row\"]/div[@class=\"col-md-6\"]"
+                }
+              ],
+              "color": "rgba(75, 0, 130, 0.4)",
+              "mapping": "cards",
+              "customBlockName": "aicards1"
+            },
+            {
+              "id": "box-id-1639521729",
+              "x": 0,
+              "y": 2273,
+              "width": 1476,
+              "height": 484,
+              "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[4]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgba(75, 0, 130, 0.4)",
+              "mapping": "defaultContent",
+              "customBlockName": ""
+            }
+          ],
+          "settings": {}
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "path": "/footer",
+      "sections": [
+        {
+          "id": "3-1",
+          "blocks": [
+            {
+              "id": "box-id--1969593975",
+              "x": 98,
+              "y": 2837,
+              "width": 1280,
+              "height": 121,
+              "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[1]",
+              "layout": {
+                "numCols": 2,
+                "numRows": 1
+              },
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"d-md-flex px-0 d-none justify-content-between\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[2]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"d-md-flex px-0 d-none justify-content-between\"]/div[@class=\"text-end\"]"
+                }
+              ],
+              "color": "rgba(0, 0, 255, 0.4)",
+              "mapping": "defaultContent",
+              "customBlockName": ""
+            },
+            {
+              "id": "box-id--1969593913",
+              "x": 98,
+              "y": 2998,
+              "width": 1280,
+              "height": 495,
+              "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+              "layout": {
+                "numCols": 3,
+                "numRows": 1
+              },
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"footer-links\"]/div[@class=\"container px-0 px-lg-0\"]/div[@class=\"row\"]/div[@class=\"col-md-4 col-lg-5\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"footer-links\"]/div[@class=\"container px-0 px-lg-0\"]/div[@class=\"row\"]/div[@class=\"col-md-4 col-lg-5\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[3]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"footer-links\"]/div[@class=\"container px-0 px-lg-0\"]/div[@class=\"row\"]/div[@class=\"col-md-4 col-lg-2\"]"
+                }
+              ],
+              "color": "rgba(0, 0, 255, 0.4)",
+              "mapping": "columns",
+              "customBlockName": "aicolumns1"
+            },
+            {
+              "id": "box-id--1969593882",
+              "x": 98,
+              "y": 3533,
+              "width": 1280,
+              "height": 42,
+              "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgba(0, 0, 255, 0.4)",
+              "mapping": "defaultContent",
+              "customBlockName": ""
+            },
+            {
+              "id": "box-id--1969593851",
+              "x": 98,
+              "y": 3575,
+              "width": 1280,
+              "height": 40,
+              "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[5]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgba(0, 0, 255, 0.4)",
+              "mapping": "defaultContent",
+              "customBlockName": ""
+            },
+            {
+              "id": "box-id--1969593820",
+              "x": 98,
+              "y": 3615,
+              "width": 1280,
+              "height": 27,
+              "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[6]",
+              "layout": {
+                "numCols": 2,
+                "numRows": 1
+              },
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[6]/div[1]/div[1]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"container-fluid px-0\"]/div[@class=\"row\"]/div[@class=\"col-lg-6\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[6]/div[1]/div[2]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"container-fluid px-0\"]/div[@class=\"row\"]/div[@class=\"col-lg-6\"]"
+                }
+              ],
+              "color": "rgba(0, 0, 255, 0.4)",
+              "mapping": "defaultContent",
+              "customBlockName": ""
+            }
+          ],
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
