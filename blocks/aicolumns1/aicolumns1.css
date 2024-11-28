@@ -1,0 +1,45 @@
+
+.aicolumns1-wrapper .aicolumns1-3-cols > div {
+  display: flex; /* Use flexbox to arrange the children side by side */
+  flex-direction: row; /* Ensure columns are side by side */
+  justify-content: space-between; /* Ensure even spacing between columns */
+  padding: 0 20px; /* Add padding to match the original spacing */
+}
+
+.aicolumns1-wrapper .aicolumns1-3-cols > div > div {
+  flex: 1; /* Allow columns to take equal width */
+  margin: 0 15px; /* Adjust horizontal spacing between columns */
+  display: flex; /* Ensure the content inside each column is laid out correctly */
+  flex-direction: column; /* Stack elements within each column vertically */
+}
+
+.aicolumns1-wrapper .aicolumns1-3-cols h4 {
+  font-weight: bold; /* Make headers bold */
+  font-size: var(--heading-font-size-m); /* Ensure font size matches the original */
+  color: var(--text-color); /* Ensure text color is uniform */
+  margin-bottom: 12px; /* Adjust spacing below the header */
+}
+
+.aicolumns1-wrapper .aicolumns1-3-cols ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.aicolumns1-wrapper .aicolumns1-3-cols li {
+  margin-bottom: 14px; /* Increase spacing between list items */
+}
+
+.aicolumns1-wrapper .aicolumns1-3-cols a {
+  text-decoration: none; /* Remove underline from links */
+  color: var(--text-color); /* Ensure text color is uniform */
+  font-size: var(--body-font-size-m); /* Ensure font size matches the original */
+}
+
+@media (min-width: 900px) {
+  .aicolumns1-wrapper .aicolumns1-3-cols > div {
+    align-items: flex-start; /* Align items to the start */
+    flex-direction: row; /* Ensure columns are side by side on larger screens */
+    gap: 30px; /* Adjust gap between columns */
+  }
+}
