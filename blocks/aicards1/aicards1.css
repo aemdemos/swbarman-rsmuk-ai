@@ -1,0 +1,84 @@
+
+.aicards1-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap as needed */
+}
+
+.aicards1 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap as needed */
+}
+
+.aicards1 > ul > li {
+  flex: 1 1 calc(50% - 20px); /* Adjust for a 2x2 grid with gap */
+  position: relative; /* To position text over image */
+  background-color: transparent; /* Make background transparent */
+  overflow: hidden; /* Ensure content does not overflow */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center text vertically */
+}
+
+.aicards1 .aicards1-card-image {
+  position: absolute; /* Position image absolutely */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Cover entire card */
+  z-index: 1;
+}
+
+.aicards1 .aicards1-card-image picture {
+  width: 100%;
+  height: 100%;
+}
+
+.aicards1 > ul > li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover entire card */
+}
+
+.aicards1 .aicards1-card-body {
+  position: relative; /* Position text relatively */
+  z-index: 2; /* Ensure text is above image */
+  padding: 20px; /* Adjust padding */
+  color: white; /* Make text white to stand out on image */
+  background: rgba(0, 0, 0, 0.3); /* Adjust background transparency */
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+  justify-content: center; /* Center text vertically */
+  align-items: center; /* Center text horizontally */
+  text-align: center; /* Center text */
+  height: 100%; /* Ensure text body covers entire card */
+}
+
+.aicards1 .aicards1-card-body h2, 
+.aicards1 .aicards1-card-body p {
+  margin: 0 0 10px 0; /* Adjust margin */
+}
+
+.aicards1 .aicards1-card-body p.button-container {
+  margin-top: auto;
+}
+
+.aicards1 .aicards1-card-body .button {
+  background-color: transparent; /* Make button background transparent */
+  border: 2px solid white; /* Add border to button */
+  color: white; /* Make button text white */
+  padding: 10px 20px; /* Adjust padding */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline block for proper sizing */
+  text-align: center; /* Center text in button */
+  border-radius: 30px; /* Make button rounded */
+  font-weight: bold; /* Make button text bold */
+}
+
+.aicards1 .aicards1-card-body .button:hover {
+  background: rgba(255, 255, 255, 0.2); /* Add subtle hover effect */
+}
