@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: white;
 }
 
 .header-wrapper > .block.header {
@@ -10,59 +11,56 @@
   flex-direction: column;
 }
 
-/* Top Strip */
-.header-wrapper > .block.header > .nav-wrapper > nav > .section.nav-tools {
-  display: flex;
-  justify-content: space-between;
-  background-color: #0072c6;
-  padding: 5px 20px;
-}
-
-.header-wrapper > .block.header > .nav-wrapper > nav > .section.nav-tools .default-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.header-wrapper > .block.header > .nav-wrapper > nav > .section.nav-tools ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header-wrapper > .block.header > .nav-wrapper > nav > .section.nav-tools ul.left {
-  flex: 1;
-  justify-content: flex-start;
-}
-
-.header-wrapper > .block.header > .nav-wrapper > nav > .section.nav-tools ul.right {
-  flex: 0 1 auto;
-  justify-content: flex-end;
-}
-
-.header-wrapper > .block.header > .nav-wrapper > nav > .section.nav-tools ul li {
-  margin: 0 10px;
-}
-
-.header-wrapper > .block.header > .nav-wrapper > nav > .section.nav-tools ul li a {
-  color: white;
-  white-space: nowrap; /* Prevent text wrapping */
-}
-
-/* Main Navigation Bar */
 .header-wrapper .nav-wrapper {
   display: flex;
-  justify-content: space-between; /* Align logo to the left and nav items to the right */
+  justify-content: center;
   align-items: center;
   background-color: white;
   padding: 10px 20px;
   max-width: 1264px;
   width: 100%;
   border-bottom: none; /* Remove border */
-  position: fixed;
-  top: 30px; /* Adjust top position to be below the top strip */
+  position: fixed; /* Fix the header */
+  top: 0; /* Adjust top position */
   z-index: 2;
+}
+
+.header-wrapper .top-strip {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0072c6;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.top-strip .left,
+.top-strip .right {
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Ensure elements are side by side */
+}
+
+.top-strip .left {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.top-strip .right {
+  flex: 0 1 auto;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.top-strip .accessible-colours {
+  margin-right: auto;
+}
+
+.top-strip .extra-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row; /* Ensure elements are side by side */
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 header nav {
@@ -90,8 +88,9 @@ header nav .nav-brand img {
 header nav .nav-sections {
   flex: 1 1 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row; /* Ensure items are side by side */
+  gap: 20px;
 }
 
 header nav .nav-sections ul {
@@ -118,24 +117,29 @@ header nav .nav-sections .nav-drop::after {
   vertical-align: middle;
 }
 
-/* Contact button */
-.header-wrapper .nav-wrapper .contact-button {
-  display: inline-block; /* Ensure button is inline-block */
-  background-color: #4CAF50; /* Correct green background */
-  color: white; /* White text */
+.header-wrapper .contact-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.header-wrapper .contact-button {
+  background-color: #4CAF50;
+  color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 4px;
   margin-left: 20px;
 }
 
+header nav .nav-sections li a[href="https://www.rsmuk.com/contact-us"] {
+  display: none; /* Hide duplicate contact link */
+}
+
 header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::before {
   content: '🔍'; /* Add magnifying glass icon */
   padding-right: 5px;
-}
-
-header nav .nav-sections li a[href="https://www.rsmuk.com/contact-us"] {
-  display: none; /* Hide duplicate contact link */
 }
 
 /* Dropdown styling */
@@ -169,82 +173,4 @@ header nav .nav-sections .nav-drop ul li a {
 
 header nav .nav-sections .nav-drop ul li a:hover {
   text-decoration: underline;
-}
-
-/* Ensure the top strip has the correct content */
-.header-wrapper .top-strip {
-  display: flex;
-  justify-content: space-between;
-  background-color: #0072c6;
-  padding: 5px 20px;
-}
-
-.top-strip .left,
-.top-strip .right {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.top-strip .left {
-  flex: 1;
-  justify-content: flex-start;
-}
-
-.top-strip .right {
-  flex: 0 1 auto;
-  justify-content: flex-end;
-}
-
-/* Style for the Accessible colours toggle */
-.top-strip .accessible-colours {
-  margin-right: auto;
-}
-
-/* Style for Events, News, Region */
-.top-strip .extra-links {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-direction: row;
-  white-space: nowrap; /* Prevent text wrapping */
-}
-
-/* Ensure main navigation bar items are centered */
-.nav-wrapper .nav-sections {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  gap: 20px;
-  flex-direction: row;
-}
-
-/* Adjust Search and Contact button alignment */
-.nav-wrapper .search-contact {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-direction: row;
-}
-
-/* Position Contact button correctly */
-.contact-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-left: 20px;
-}
-
-/* Add Contact RSM button */
-.header-wrapper .contact-button-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-.header-wrapper .contact-button {
-  margin-left: auto;
 }
