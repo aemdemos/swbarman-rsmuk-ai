@@ -38,6 +38,31 @@
           "id": "2-1",
           "blocks": [
             {
+              "id": "box-id-2055914928",
+              "x": 20,
+              "y": 120,
+              "width": 1920,
+              "height": 525,
+              "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/figure[1]/picture[1]/img[1]",
+              "layout": {
+                "numCols": 1,
+                "numRows": 2
+              },
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]",
+                  "xpathWithDetails": "id(\"content\")/div[@class=\"row\"]/div[@class=\"component hero-banner-big-component col-12\"]/div[@class=\"component-content\"]/div[@class=\"component hero hero-home hero-component\"]/div[@class=\"component-content\"]/div[@class=\"hero-caption\"]/div[@class=\"hero-content max-w\"]/div[@class=\"hero-heading\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[3]/div[2]",
+                  "xpathWithDetails": "id(\"onetrust-banner-sdk\")"
+                }
+              ],
+              "color": "rgba(75, 0, 130, 0.2)",
+              "mapping": "hero",
+              "customBlockName": "aihero1"
+            },
+            {
               "id": "box-id-1639521667",
               "x": 0,
               "y": 765,
@@ -50,7 +75,7 @@
               },
               "color": "rgba(75, 0, 130, 0.4)",
               "mapping": "defaultContent",
-              "customBlockName": ""
+              "customBlockName": "aidefaultcustomblock1"
             },
             {
               "id": "box-id-1639521698",
@@ -98,6 +123,43 @@
               },
               "color": "rgba(75, 0, 130, 0.4)",
               "mapping": "defaultContent",
+              "customBlockName": "aidefaultcustomblock1"
+            },
+            {
+              "id": "box-id-1397527455",
+              "x": 20,
+              "y": 2797,
+              "width": 1920,
+              "height": 878,
+              "xpath": "/html[1]/body[1]/div[1]/footer[1]",
+              "layout": {
+                "numCols": 1,
+                "numRows": 5
+              },
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[1]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"d-md-flex px-0 d-none justify-content-between\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"footer-links\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"text-caption-large px-0\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[5]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"spacer\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[6]",
+                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"container-fluid px-0\"]"
+                }
+              ],
+              "color": "rgb(0, 0, 255)",
+              "mapping": "defaultContent",
               "customBlockName": ""
             }
           ],
@@ -134,8 +196,8 @@
                 }
               ],
               "color": "rgba(0, 0, 255, 0.4)",
-              "mapping": "defaultContent",
-              "customBlockName": ""
+              "mapping": "columns",
+              "customBlockName": "aicolumns2"
             },
             {
               "id": "box-id--1969593913",
@@ -219,7 +281,7 @@
               ],
               "color": "rgba(0, 0, 255, 0.4)",
               "mapping": "defaultContent",
-              "customBlockName": ""
+              "customBlockName": "aicolumns2"
             }
           ],
           "settings": {}
