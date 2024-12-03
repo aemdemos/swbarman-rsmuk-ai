@@ -4,63 +4,37 @@
   flex-direction: column;
   width: 100%;
   background-color: white;
+  position: relative;
 }
 
-.header-wrapper > .block.header {
-  display: flex;
-  flex-direction: column;
+.header-wrapper::before {
+  content: '';
+  display: block;
+  background-color: #0071bc; /* Blue background */
+  height: 20px; /* Adjust height to match original */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure it appears above the header */
 }
 
 .header-wrapper .nav-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Adjust to space between */
   align-items: center;
   background-color: white;
   padding: 10px 20px;
   max-width: 1264px;
   width: 100%;
-  border-bottom: none; /* Remove border */
-  position: fixed; /* Fix the header */
-  top: 0; /* Adjust top position */
-  z-index: 2;
+  position: fixed;
+  top: 20px; /* Adjust to account for the top blue bar */
+  z-index: 2; /* Ensure it appears above the blue bar */
 }
 
-.header-wrapper .top-strip {
+header {
   display: flex;
-  justify-content: space-between;
-  background-color: #0072c6;
-  padding: 5px 20px;
   width: 100%;
-}
-
-.top-strip .left,
-.top-strip .right {
-  display: flex;
-  align-items: center;
-  flex-direction: row; /* Ensure elements are side by side */
-}
-
-.top-strip .left {
-  flex: 1;
-  justify-content: flex-start;
-}
-
-.top-strip .right {
-  flex: 0 1 auto;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.top-strip .accessible-colours {
-  margin-right: auto;
-}
-
-.top-strip .extra-links {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-direction: row; /* Ensure elements are side by side */
-  white-space: nowrap; /* Prevent text wrapping */
 }
 
 header nav {
@@ -68,7 +42,7 @@ header nav {
   align-items: center;
   max-width: 1264px;
   width: 100%;
-  justify-content: space-between; /* Ensure logo on left, nav items on right */
+  justify-content: space-between;
 }
 
 header nav .nav-hamburger {
@@ -78,18 +52,21 @@ header nav .nav-hamburger {
 
 header .nav-brand {
   flex: 0 1 auto;
+  display: flex; /* Ensure logo is vertically aligned */
+  align-items: center;
 }
 
-header nav .nav-brand img {
+header .nav-brand img {
   height: 40px;
-  object-fit: contain; /* Ensure image is not stretched */
+  object-fit: contain;
+  margin-right: 20px; /* Adjust margin for better alignment */
 }
 
 header nav .nav-sections {
   flex: 1 1 auto;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row; /* Ensure items are side by side */
+  justify-content: center;
+  flex-direction: row;
   gap: 20px;
 }
 
@@ -106,12 +83,12 @@ header nav .nav-sections li {
 }
 
 header nav .nav-sections li a {
-  color: #333; /* Change link color to gray */
-  white-space: nowrap; /* Prevent text wrapping */
+  color: #333;
+  white-space: nowrap;
 }
 
 header nav .nav-sections .nav-drop::after {
-  content: '▾'; /* Add dropdown indicator */
+  content: '▾';
   padding-left: 5px;
   display: inline-block;
   vertical-align: middle;
@@ -125,24 +102,70 @@ header nav .nav-sections .nav-drop::after {
 }
 
 .header-wrapper .contact-button {
-  background-color: #4CAF50;
+  background-color: #28a745; /* Green background */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-left: 20px;
 }
 
 header nav .nav-sections li a[href="https://www.rsmuk.com/contact-us"] {
-  display: none; /* Hide duplicate contact link */
+  display: none;
 }
 
 header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::before {
-  content: '🔍'; /* Add magnifying glass icon */
+  content: '🔍';
   padding-right: 5px;
+  display: inline-block;
 }
 
-/* Dropdown styling */
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"] {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::after {
+  content: 'Search';
+  padding-left: 5px;
+  text-decoration: underline;
+  display: none; /* Ensure the duplicate text doesn't appear */
+}
+
+.nav-tools {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  background-color: #0071bc; /* Blue background */
+  position: relative;
+  z-index: 2; /* Ensure it appears above the blue bar */
+}
+
+.nav-tools ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  white-space: nowrap; /* Ensure text doesn't break into multiple lines */
+}
+
+.nav-tools li {
+  margin: 0;
+}
+
+.nav-tools a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-tools a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure proper display of dropdowns */
 header nav .nav-sections .nav-drop ul {
   display: none;
   position: absolute;
@@ -173,4 +196,97 @@ header nav .nav-sections .nav-drop ul li a {
 
 header nav .nav-sections .nav-drop ul li a:hover {
   text-decoration: underline;
+}
+
+/* Fix for logo misalignment */
+header .nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjustments to ensure elements are on a single line */
+.header-wrapper > .block.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.header-wrapper .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 20px;
+  max-width: 1264px;
+  width: 100%;
+  position: fixed;
+  top: 20px;
+  z-index: 2;
+}
+
+.header-wrapper .nav-tools {
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.nav-tools ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.header-wrapper .extra-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-wrapper .extra-links a:hover {
+  text-decoration: underline;
+}
+
+/* Adjust the padding of the search section */
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"] {
+  padding-right: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::after {
+  display: none; /* Ensure the duplicate text doesn't appear */
+}
+
+/* Fix alignment of the blue bar content */
+.nav-tools ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  white-space: nowrap; /* Ensure text doesn't break into multiple lines */
+}
+
+/* Fix alignment and spacing of navigation links */
+header nav .nav-sections ul {
+  gap: 10px; /* Reduce the gap between navigation links */
+}
+
+/* Ensure the blue bar content is aligned horizontally */
+.header-wrapper .nav-tools ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the navigation */
+header nav {
+  justify-content: center;
 }

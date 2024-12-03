@@ -1,0 +1,71 @@
+
+.aicolumns2-wrapper {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px; /* Optional: add some padding for spacing */
+}
+
+.aicolumns2 > div {
+  display: flex;
+  flex-direction: row; /* Align elements side by side */
+  justify-content: space-between; /* Space out the two columns */
+  align-items: flex-start; /* Align items to the start of the container */
+}
+
+.aicolumns2 img {
+  width: auto; /* Adjust image width to its natural size */
+  max-width: 100%; /* Ensure it does not overflow its container */
+}
+
+.aicolumns2 > div > div {
+  flex: 1;
+}
+
+.aicolumns2 > div > div:first-child {
+  margin-right: 20px; /* Add spacing between the columns */
+}
+
+.aicolumns2 > div > div:last-child {
+  text-align: right; /* Align the text to the right */
+  display: flex;
+  flex-direction: column; /* Align elements vertically */
+  align-items: flex-end; /* Align items to the end of the container */
+}
+
+.aicolumns2 h3, .aicolumns2 h5 {
+  margin: 0; /* Remove default margins */
+}
+
+.aicolumns2 ul {
+  list-style: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.aicolumns2 ul li {
+  display: block; /* Stack social media links vertically */
+  margin-bottom: 5px; /* Space between social media icons vertically */
+}
+
+.aicolumns2 > div > div:last-child h4, .aicolumns2 > div > div:last-child ul {
+  margin-top: 10px; /* Add spacing between logo and follow us text */
+}
+
+@media (min-width: 900px) {
+  .aicolumns2 > div {
+    flex-direction: row; /* Ensure horizontal layout on larger screens */
+    justify-content: space-between; /* Space out the columns */
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+
+  .aicolumns2 > div > div {
+    flex: 1;
+  }
+
+  .aicolumns2 > div > div:first-child {
+    margin-right: 20px; /* Add spacing between the columns */
+  }
+
+  .aicolumns2 > div > div:last-child {
+    text-align: right; /* Align the text to the right */
+  }
+}
