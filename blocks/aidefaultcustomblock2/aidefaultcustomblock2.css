@@ -1,0 +1,57 @@
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper {
+  max-width: unset;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 800px; /* Adjust the height as needed */
+  background: url('./media_152732f975b7cf1a563d4ec1e0a63dc47d6540e5e.jpeg?width=2880&format=jpeg&optimize=medium') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: flex-start; /* Align content to the left */
+  box-sizing: border-box;
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 > div {
+  display: flex;
+  flex-direction: row; /* Ensure the content is side by side */
+  align-items: center;
+  width: 100%;
+  padding-left: 10%; /* Adjust padding to better center the text horizontally */
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 > div > div {
+  max-width: 45%; /* Adjust this width based on your preference */
+  color: white;
+  display: flex;
+  flex-direction: column; /* Ensure elements inside are stacked */
+  justify-content: center; /* Center the text vertically */
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 p,
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 h2 {
+  margin: 0 0 20px 0; /* Adjust the spacing between elements */
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button-container {
+  margin-top: 20px;
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button {
+  background-color: transparent; /* Adjust button styles as needed */
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button:hover {
+  background-color: white;
+  color: green; /* Adjust hover styles as needed */
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 picture {
+  display: none; /* Hide the additional images */
+}
