@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: white;
+  background-color: white; /* Ensure background is solid white */
 }
 
 .header-wrapper > .block.header {
@@ -21,14 +21,13 @@
   width: 100%;
   border-bottom: none; /* Remove border */
   position: fixed; /* Fix the header */
-  top: 0; /* Adjust top position */
   z-index: 2;
 }
 
 .header-wrapper .top-strip {
   display: flex;
   justify-content: space-between;
-  background-color: #0072c6;
+  background-color: blue; /* Change background color to blue */
   padding: 5px 20px;
   width: 100%;
 }
@@ -61,6 +60,10 @@
   gap: 10px;
   flex-direction: row; /* Ensure elements are side by side */
   white-space: nowrap; /* Prevent text wrapping */
+}
+
+header {
+  display: flex;
 }
 
 header nav {
@@ -117,6 +120,21 @@ header nav .nav-sections .nav-drop::after {
   vertical-align: middle;
 }
 
+/* Adjust Search Section */
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"] {
+  position: relative;
+}
+
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  bottom: -5px;
+}
+
 .header-wrapper .contact-button-container {
   display: flex;
   align-items: center;
@@ -131,15 +149,22 @@ header nav .nav-sections .nav-drop::after {
   text-decoration: none;
   border-radius: 4px;
   margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header nav .nav-sections li a[href="https://www.rsmuk.com/contact-us"] {
+header nav .nav-sections li a[href="https://www.rsmuk.com/contact-us"]:not(.contact-button) {
   display: none; /* Hide duplicate contact link */
 }
 
 header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::before {
   content: '🔍'; /* Add magnifying glass icon */
   padding-right: 5px;
+}
+
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"]:last-child {
+  display: none; /* Hide duplicate search link */
 }
 
 /* Dropdown styling */

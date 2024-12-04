@@ -2,83 +2,66 @@
 .aicards1-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust gap as needed */
+  gap: 20px; /* Adjust as needed */
 }
 
-.aicards1 > ul {
-  list-style: none;
+.aicards1 > div {
+  display: flex;
+  width: 100%;
+  gap: 20px; /* Adjust as needed */
+  flex-direction: row; /* Ensuring side-by-side layout */
+}
+
+.aicards1 > div > div {
+  position: relative;
+  color: white; /* Assuming white text color for better contrast */
+  padding: 20px; /* Adjust padding as needed */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust height as needed */
+  flex: 1 1 calc(50% - 20px); /* Adjust to take up half of the row */
+  display: flex;
+  flex-direction: column; /* Correctly ensuring the text elements stack */
+  justify-content: center; /* Vertically center the content */
+  align-items: flex-start; /* Align text to the left */
+}
+
+.aicards1 > div > div:nth-child(1) {
+  background-image: url('./media_1f8d87d9791d7897d59d29b5669b954e0453eddbb.jpeg'); /* First block background */
+}
+
+.aicards1 > div > div:nth-child(2) {
+  background-image: url('./media_1b4af8ea1cf4b10b3f5d1d3ba6bff160c24c33661.jpeg'); /* Second block background */
+}
+
+.aicards1 > div:nth-child(2) > div:nth-child(1) {
+  background-image: url('./media_194881bc2e3613116ddbc1171b68b687687d3fb74.jpeg'); /* Third block background */
+}
+
+.aicards1 > div:nth-child(2) > div:nth-child(2) {
+  background-image: url('./media_17c0633acb8978e1885918f1387fdf0b948964ff7.jpeg'); /* Fourth block background */
+}
+
+.aicards1 h2, .aicards1 p, .aicards1 .button-container {
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Adjust gap as needed */
+  padding: 10px 20px; /* Ensure padding within the text container */
 }
 
-.aicards1 > ul > li {
-  flex: 1 1 calc(50% - 20px); /* Adjust for a 2x2 grid with gap */
-  position: relative; /* To position text over image */
-  background-color: transparent; /* Make background transparent */
-  overflow: hidden; /* Ensure content does not overflow */
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center text vertically */
+.aicards1 .button-container {
+  align-self: flex-start; /* Align button to the start of the flex container */
+  margin-top: auto; /* Push the button to the bottom */
 }
 
-.aicards1 .aicards1-card-image {
-  position: absolute; /* Position image absolutely */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Cover entire card */
-  z-index: 1;
+.aicards1 img {
+  display: none; /* Hide the separate image elements */
 }
 
-.aicards1 .aicards1-card-image picture {
-  width: 100%;
-  height: 100%;
+.aicards1 .button {
+  background-color: var(--link-color);
+  color: var(--background-color);
+  margin-top: 10px; /* Add margin to position the button correctly */
 }
 
-.aicards1 > ul > li img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Cover entire card */
-}
-
-.aicards1 .aicards1-card-body {
-  position: relative; /* Position text relatively */
-  z-index: 2; /* Ensure text is above image */
-  padding: 20px; /* Adjust padding */
-  color: white; /* Make text white to stand out on image */
-  background: rgba(0, 0, 0, 0.3); /* Adjust background transparency */
-  display: flex;
-  flex-direction: column; /* Stack text elements vertically */
-  justify-content: center; /* Center text vertically */
-  align-items: center; /* Center text horizontally */
-  text-align: center; /* Center text */
-  height: 100%; /* Ensure text body covers entire card */
-}
-
-.aicards1 .aicards1-card-body h2, 
-.aicards1 .aicards1-card-body p {
-  margin: 0 0 10px 0; /* Adjust margin */
-}
-
-.aicards1 .aicards1-card-body p.button-container {
-  margin-top: auto;
-}
-
-.aicards1 .aicards1-card-body .button {
-  background-color: transparent; /* Make button background transparent */
-  border: 2px solid white; /* Add border to button */
-  color: white; /* Make button text white */
-  padding: 10px 20px; /* Adjust padding */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Inline block for proper sizing */
-  text-align: center; /* Center text in button */
-  border-radius: 30px; /* Make button rounded */
-  font-weight: bold; /* Make button text bold */
-}
-
-.aicards1 .aicards1-card-body .button:hover {
-  background: rgba(255, 255, 255, 0.2); /* Add subtle hover effect */
+.aicards1 .button:hover {
+  background-color: var(--link-hover-color);
 }
