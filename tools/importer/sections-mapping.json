@@ -61,12 +61,18 @@
               "color": "rgba(75, 0, 130, 0.2)",
               "mapping": "hero",
               "customBlockName": "aihero1"
-            },
+            }
+          ],
+          "settings": {}
+        },
+        {
+          "id": "2-2",
+          "blocks": [
             {
               "id": "box-id-1639521667",
-              "x": 0,
+              "x": 489,
               "y": 765,
-              "width": 1476,
+              "width": 1920,
               "height": 484,
               "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]",
               "layout": {
@@ -76,12 +82,18 @@
               "color": "rgba(75, 0, 130, 0.4)",
               "mapping": "defaultContent",
               "customBlockName": "aidefaultcustomblock1"
-            },
+            }
+          ],
+          "settings": {}
+        },
+        {
+          "id": "2-3",
+          "blocks": [
             {
               "id": "box-id-1639521698",
-              "x": 0,
+              "x": 489,
               "y": 1249,
-              "width": 1476,
+              "width": 1920,
               "height": 1024,
               "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[3]",
               "layout": {
@@ -107,14 +119,20 @@
                 }
               ],
               "color": "rgba(75, 0, 130, 0.4)",
-              "mapping": "cards",
+              "mapping": "columns",
               "customBlockName": "aicards1"
-            },
+            }
+          ],
+          "settings": {}
+        },
+        {
+          "id": "2-4",
+          "blocks": [
             {
               "id": "box-id-1639521729",
-              "x": 0,
+              "x": 489,
               "y": 2273,
-              "width": 1476,
+              "width": 1920,
               "height": 484,
               "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[4]",
               "layout": {
