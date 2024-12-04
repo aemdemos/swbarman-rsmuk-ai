@@ -123,44 +123,7 @@
               },
               "color": "rgba(75, 0, 130, 0.4)",
               "mapping": "defaultContent",
-              "customBlockName": "aidefaultcustomblock1"
-            },
-            {
-              "id": "box-id-1397527455",
-              "x": 20,
-              "y": 2797,
-              "width": 1920,
-              "height": 878,
-              "xpath": "/html[1]/body[1]/div[1]/footer[1]",
-              "layout": {
-                "numCols": 1,
-                "numRows": 5
-              },
-              "childrenXpaths": [
-                {
-                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[1]",
-                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"d-md-flex px-0 d-none justify-content-between\"]"
-                },
-                {
-                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
-                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"footer-links\"]"
-                },
-                {
-                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]",
-                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"text-caption-large px-0\"]"
-                },
-                {
-                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[5]",
-                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"spacer\"]"
-                },
-                {
-                  "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[6]",
-                  "xpathWithDetails": "id(\"footer\")/div[@class=\"row\"]/div[@class=\"component body-copy ui-dev col-12\"]/div[@class=\"component-content\"]/footer[@class=\"footer bg-gray-5\"]/div[@class=\"container demo\"]/div[@class=\"row\"]/div[@class=\"container-fluid px-0\"]"
-                }
-              ],
-              "color": "rgb(0, 0, 255)",
-              "mapping": "defaultContent",
-              "customBlockName": ""
+              "customBlockName": "aidefaultcustomblock2"
             }
           ],
           "settings": {}
