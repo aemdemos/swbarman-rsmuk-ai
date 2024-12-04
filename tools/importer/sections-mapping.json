@@ -60,7 +60,7 @@
               ],
               "color": "rgba(75, 0, 130, 0.2)",
               "mapping": "hero",
-              "customBlockName": "aihero1"
+              "customBlockName": ""
             }
           ],
           "settings": {}
