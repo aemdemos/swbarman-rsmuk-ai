@@ -1,66 +1,78 @@
 
 .aicolumns2-wrapper {
-  background-color: #f1f1f1; /* Light gray background */
-  padding: 20px; /* Optional padding for spacing */
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px; /* Padding around the content */
+}
+
+.aicolumns2 {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Center align vertically */
 }
 
 .aicolumns2 > div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row; /* Horizontal layout for top-level elements */
+  width: 100%;
   align-items: center;
-  flex-direction: row; /* Ensure elements are side by side */
 }
 
 .aicolumns2 > div > div {
-  display: flex;
-  flex-direction: row; /* Ensure inner elements are side by side */
-  align-items: center;
+  flex: 1; /* Ensure each section takes up equal space */
 }
 
 .aicolumns2 > div > div:first-child {
-  flex: 1; /* Left section */
   display: flex;
-  flex-direction: column; /* Stack text elements vertically */
-  align-items: flex-start; /* Align text to the left */
+  flex-direction: column; /* Vertical stacking for the left section */
+  justify-content: center; /* Center align vertically */
+  gap: 10px; /* Space between the heading and subheading */
+  font-weight: 300; /* Lighter font weight */
 }
 
 .aicolumns2 > div > div:last-child {
   display: flex;
+  flex-direction: row; /* Horizontal stacking for the right section */
+  align-items: center; /* Center align vertically */
+  justify-content: space-between; /* Space between elements */
+  gap: 20px; /* Space between elements */
+}
+
+.aicolumns2 img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure the colored rectangles and the "RSM" text are aligned properly */
+.aicolumns2 > div > div:last-child > p {
+  display: flex;
+  flex-direction: column; /* Vertical layout for the rectangles and "RSM" text */
+  align-items: flex-end; /* Align to the right */
+  gap: 10px; /* Space between the colored rectangles and the "RSM" text */
+}
+
+/* Specific styling for the follow section to ensure icons are aligned horizontally */
+#audit--tax--consulting {
+  margin-top: auto; /* Push the text to the bottom */
+}
+
+#follow-rsmuk {
+  display: flex;
   align-items: center;
-  gap: 10px; /* Adjust gap as needed to match original image */
-  flex-shrink: 0; /* Prevent shrinking of right section */
+  gap: 10px; /* Space between the text and the icons */
+  margin-top: 10px; /* Space between "RSM" and "Follow RSMUK:" */
 }
 
-.aicolumns2 > div > div:last-child picture {
-  margin-right: 10px; /* Space between the picture and text */
-}
-
-.aicolumns2 h3, .aicolumns2 h5, .aicolumns2 h4 {
-  margin: 0; /* Remove default margin */
-  font-weight: 400; /* Ensure font weight is normal */
-}
-
-.aicolumns2 h3 {
-  font-size: 1.3rem; /* Adjust font size to match original image */
-  color: #555555; /* Adjust text color to match original image */
-}
-
-.aicolumns2 h5 {
-  font-size: 0.9rem; /* Adjust font size to match original image */
-  color: #555555; /* Adjust text color to match original image */
-}
-
-.aicolumns2 h4 {
-  margin-left: 10px; /* Adjust margin to match original image */
-  font-size: 0.9rem; /* Adjust font size to match original image */
-  color: #555555; /* Adjust text color to match original image */
-  align-self: center; /* Vertically center align "Follow RSMUK:" */
+#follow-rsmuk + p {
+  display: flex;
+  gap: 10px; /* Space between icons */
 }
 
 @media (min-width: 900px) {
   .aicolumns2 > div {
+    display: flex;
     align-items: center;
-    gap: 24px; /* Adjust gap for larger screens */
+    flex-direction: row; /* Horizontal layout for large screens */
+    gap: 24px;
   }
 
   .aicolumns2 > div > div {

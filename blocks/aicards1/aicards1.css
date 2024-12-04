@@ -1,67 +1,96 @@
 
-.aicards1-wrapper {
+.aicards1-wrapper .aicards1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust as needed */
+  gap: 24px;
 }
 
-.aicards1 > div {
+.aicards1-wrapper .aicards1 > div {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
   width: 100%;
-  gap: 20px; /* Adjust as needed */
-  flex-direction: row; /* Ensuring side-by-side layout */
 }
 
-.aicards1 > div > div {
-  position: relative;
-  color: white; /* Assuming white text color for better contrast */
-  padding: 20px; /* Adjust padding as needed */
+.aicards1-wrapper .aicards1 > div > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start;
   background-size: cover;
   background-position: center;
-  height: 300px; /* Adjust height as needed */
-  flex: 1 1 calc(50% - 20px); /* Adjust to take up half of the row */
-  display: flex;
-  flex-direction: column; /* Correctly ensuring the text elements stack */
-  justify-content: center; /* Vertically center the content */
-  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Ensure text overlay positioning */
 }
 
-.aicards1 > div > div:nth-child(1) {
-  background-image: url('./media_1f8d87d9791d7897d59d29b5669b954e0453eddbb.jpeg'); /* First block background */
+.aicards1-wrapper .aicards1 > div > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Add semi-transparent background for better text visibility */
+  z-index: 1;
 }
 
-.aicards1 > div > div:nth-child(2) {
-  background-image: url('./media_1b4af8ea1cf4b10b3f5d1d3ba6bff160c24c33661.jpeg'); /* Second block background */
+.aicards1-wrapper .aicards1 > div:nth-child(1) > div:nth-child(1) {
+  background-image: url('./media_1f8d87d9791d7897d59d29b5669b954e0453eddbb.jpeg');
 }
 
-.aicards1 > div:nth-child(2) > div:nth-child(1) {
-  background-image: url('./media_194881bc2e3613116ddbc1171b68b687687d3fb74.jpeg'); /* Third block background */
+.aicards1-wrapper .aicards1 > div:nth-child(1) > div:nth-child(2) {
+  background-image: url('./media_1b4af8ea1cf4b10b3f5d1d3ba6bff160c24c33661.jpeg');
 }
 
-.aicards1 > div:nth-child(2) > div:nth-child(2) {
-  background-image: url('./media_17c0633acb8978e1885918f1387fdf0b948964ff7.jpeg'); /* Fourth block background */
+.aicards1-wrapper .aicards1 > div:nth-child(2) > div:nth-child(1) {
+  background-image: url('./media_194881bc2e3613116ddbc1171b68b687687d3fb74.jpeg');
 }
 
-.aicards1 h2, .aicards1 p, .aicards1 .button-container {
-  margin: 0;
-  padding: 10px 20px; /* Ensure padding within the text container */
+.aicards1-wrapper .aicards1 > div:nth-child(2) > div:nth-child(2) {
+  background-image: url('./media_17c0633acb8978e1885918f1387fdf0b948964ff7.jpeg');
 }
 
-.aicards1 .button-container {
-  align-self: flex-start; /* Align button to the start of the flex container */
-  margin-top: auto; /* Push the button to the bottom */
+.aicards1-wrapper .aicards1 img {
+  display: none; /* Hide the original images */
 }
 
-.aicards1 img {
-  display: none; /* Hide the separate image elements */
+.aicards1-wrapper .aicards1 h2,
+.aicards1-wrapper .aicards1 p,
+.aicards1-wrapper .aicards1 .button-container {
+  margin: 0 0 10px 0;
+  z-index: 2; /* Ensure text is above the overlay */
+  width: 100%;
 }
 
-.aicards1 .button {
+.aicards1-wrapper .aicards1 .button-container {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.aicards1-wrapper .aicards1 * {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.aicards1-wrapper .aicards1 .button {
   background-color: var(--link-color);
   color: var(--background-color);
-  margin-top: 10px; /* Add margin to position the button correctly */
 }
 
-.aicards1 .button:hover {
+.aicards1-wrapper .aicards1 .button:hover,
+.aicards1-wrapper .aicards1 .button:focus {
   background-color: var(--link-hover-color);
+}
+
+@media (max-width: 900px) {
+  .aicards1-wrapper .aicards1 {
+    flex-direction: column;
+  }
+
+  .aicards1-wrapper .aicards1 > div {
+    flex-direction: column;
+  }
 }

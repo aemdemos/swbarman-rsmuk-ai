@@ -1,57 +1,67 @@
 
 .aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper {
-  max-width: unset;
-  padding: 0;
+  background: linear-gradient(to right, #0e3a0e, #1e4d1e); /* Green gradient background */
+  max-width: unset; /* Allow full width */
+  padding: 0; /* Remove padding */
   position: relative;
-  width: 100%;
-  height: 800px; /* Adjust the height as needed */
-  background: url('./media_152732f975b7cf1a563d4ec1e0a63dc47d6540e5e.jpeg?width=2880&format=jpeg&optimize=medium') no-repeat center center;
-  background-size: cover;
+  overflow: hidden;
   display: flex;
-  align-items: center; /* Vertically center the content */
-  justify-content: flex-start; /* Align content to the left */
-  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  height: 400px; /* Adjust height as needed */
+}
+
+.aidefaultcustomblock2-wrapper::before {
+  content: "";
+  background-image: url('./path_to_your_background_image.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* Adjust opacity as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the start */
+  justify-content: center; /* Center vertically */
+  width: 100%;
+  padding: 20px; /* Adjust padding as needed */
 }
 
 .aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 > div {
   display: flex;
-  flex-direction: row; /* Ensure the content is side by side */
-  align-items: center;
-  width: 100%;
-  padding-left: 10%; /* Adjust padding to better center the text horizontally */
-}
-
-.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 > div > div {
-  max-width: 45%; /* Adjust this width based on your preference */
-  color: white;
-  display: flex;
-  flex-direction: column; /* Ensure elements inside are stacked */
-  justify-content: center; /* Center the text vertically */
-}
-
-.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 p,
-.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 h2 {
-  margin: 0 0 20px 0; /* Adjust the spacing between elements */
-}
-
-.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button-container {
-  margin-top: 20px;
-}
-
-.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button {
-  background-color: transparent; /* Adjust button styles as needed */
-  color: white;
-  text-decoration: none;
-  border: 1px solid white;
-  padding: 10px 20px;
-  display: inline-block;
-}
-
-.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button:hover {
-  background-color: white;
-  color: green; /* Adjust hover styles as needed */
+  flex-direction: column; /* Stack elements vertically */
+  color: #ffffff; /* White text color for contrast */
+  z-index: 1; /* Ensure text is above background graphics */
+  max-width: 50%; /* Adjust max width as needed */
 }
 
 .aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 picture {
-  display: none; /* Hide the additional images */
+  display: none; /* Hide the picture elements if not needed */
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 p,
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 h2,
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button-container {
+  margin: 10px 0; /* Add some margin between elements */
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button-container {
+  margin-top: 20px; /* Extra margin for button */
+}
+
+.aidefaultcustomblock2-container > .aidefaultcustomblock2-wrapper > .block.aidefaultcustomblock2 .button {
+  background-color: #fff; /* Button background color */
+  color: #0e3a0e; /* Button text color */
+  padding: 12px 24px; /* Adjust button padding */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Make the text bold */
+  font-size: 16px; /* Adjust font size */
 }

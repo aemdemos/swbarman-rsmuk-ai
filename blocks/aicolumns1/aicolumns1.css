@@ -1,43 +1,37 @@
 
-.aicolumns1-wrapper {
-  display: flex;
-  justify-content: center; /* Center the block horizontally within the wrapper */
-}
-
+/* Ensure the parent container displays the columns side by side */
 .aicolumns1-wrapper > .aicolumns1 > div {
   display: flex;
-  flex-direction: row; /* Align columns horizontally */
-  gap: 20px; /* Space between the columns */
-  flex-wrap: wrap; /* Ensure columns wrap on smaller screens */
+  flex-direction: row; /* Align columns side by side */
+  justify-content: space-between; /* Ensure space between columns */
+  gap: 20px; /* Adjust the gap between columns as needed */
 }
 
-.aicolumns1-wrapper .aicolumns1 > div > div {
-  flex: 1; /* Make all columns take equal width */
-  max-width: 33%; /* Ensure they don't exceed one-third of the container's width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+/* Style each column */
+.aicolumns1 > div > div {
+  flex: 1; /* Ensure each column takes up equal space */
   display: flex;
-  flex-direction: column; /* Ensure the content within each column is stacked vertically */
+  flex-direction: column; /* Stack elements vertically within each column */
 }
 
-.aicolumns1-wrapper .aicolumns1 h4 {
-  font-weight: bold;
-  color: var(--dark-color); /* Set heading color to dark */
+/* Style the titles */
+.aicolumns1 h4 {
+  font-weight: bold; /* Bold titles */
 }
 
-.aicolumns1-wrapper .aicolumns1 ul {
+/* Style the list items */
+.aicolumns1 ul {
   list-style-type: none; /* Remove default list styling */
   padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
 }
 
-.aicolumns1-wrapper .aicolumns1 li {
-  margin-bottom: 20px; /* Increase space between list items */
+/* Add spacing between list items */
+.aicolumns1 li {
+  margin-bottom: 8px; /* Space between list items */
 }
 
-.aicolumns1-wrapper .aicolumns1 a {
-  color: var(--dark-color); /* Set link color to dark */
-}
-
-.aicolumns1-wrapper .aicolumns1 a:hover {
-  text-decoration: underline; /* Optional: add underline on hover for links */
+/* Style the links inside the list items */
+.aicolumns1 a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure link color matches text color */
 }
