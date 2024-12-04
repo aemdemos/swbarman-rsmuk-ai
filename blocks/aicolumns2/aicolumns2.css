@@ -1,0 +1,89 @@
+
+.aicolumns2-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.aicolumns2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.aicolumns2 > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side layout */
+  gap: 24px;
+  align-items: center;
+}
+
+.aicolumns2 > div > div:first-child {
+  flex: 2; /* Two-thirds width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+}
+
+.aicolumns2 > div > div:last-child {
+  flex: 1; /* One-third width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align elements to the top */
+  align-items: flex-end;
+}
+
+.aicolumns2 img {
+  max-width: 150px; /* Adjusted size to match original */
+  height: auto;
+  align-self: flex-start; /* Align image to top right */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.aicolumns2 > div > div:last-child p {
+  margin: 0;
+}
+
+.aicolumns2 > div > div:last-child h4 {
+  margin-top: 20px;
+  text-align: right; /* Ensure text alignment */
+}
+
+/* Add styles for social media icons */
+.aicolumns2 .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end; /* Align icons to the right */
+}
+
+.aicolumns2 .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 900px) {
+  .aicolumns2 > div {
+    align-items: flex-start;
+  }
+
+  .aicolumns2 > div > div {
+    flex: 1;
+  }
+}
+
+/* Text Styling */
+.aicolumns2 h3 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.aicolumns2 h5 {
+  font-size: var(--heading-font-size-s);
+  font-weight: 400;
+  margin-top: 0; /* Ensure no extra margin at the top */
+  margin-bottom: 0; /* Ensure no extra margin at the bottom */
+}

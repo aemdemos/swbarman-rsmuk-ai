@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 .aicolumns1-wrapper > .aicolumns1 > div {
   display: flex;
   flex-direction: row;
@@ -44,5 +45,50 @@
 
   .aicolumns1-wrapper > .aicolumns1 > div > div {
     flex: 1;
+=======
+.aicolumns1-wrapper {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 20px; /* Padding around the container */
+}
+
+.aicolumns1.block.aicolumns1-3-cols > div {
+  display: flex;
+  flex-direction: row; /* Ensure columns are side by side */
+  justify-content: space-between; /* Distribute space between items */
+  width: 100%;
+}
+
+.aicolumns1.block.aicolumns1-3-cols > div > div {
+  flex: 1; /* Allow each column to take equal space */
+  margin: 0 20px; /* Margin between columns for better spacing */
+}
+
+.aicolumns1.block.aicolumns1-3-cols h4 {
+  font-weight: bold; /* Bold headings */
+  font-size: 1.2em; /* Slightly larger font size for headings */
+  margin-bottom: 10px; /* Space below headings */
+}
+
+.aicolumns1.block.aicolumns1-3-cols ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Ensure no extra margin */
+}
+
+.aicolumns1.block.aicolumns1-3-cols ul li {
+  margin-bottom: 5px; /* Space between list items */
+  font-size: 1em; /* Ensure list items font size is consistent */
+}
+
+.aicolumns1.block.aicolumns1-3-cols ul li a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Responsive adjustments */
+@media (min-width: 900px) {
+  .aicolumns1.block.aicolumns1-3-cols > div {
+    align-items: flex-start; /* Align items to the start */
+>>>>>>> Stashed changes
   }
 }

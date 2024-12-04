@@ -1,0 +1,86 @@
+
+.aidefaultcustomblock1-container > .aidefaultcustomblock1-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.aidefaultcustomblock1-wrapper {
+  position: relative;
+  background-image: url('./media_1df1ede268b3747146d1e2c4662fb4206cd6e2646.jpeg?width=750&format=jpeg&optimize=medium');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 > div > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%; /* Adjust width to make the layout more compact */
+}
+
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 > div > div > p,
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 > div > div > h2 {
+  margin: 10px 0;
+}
+
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 > div > div > p.button-container {
+  margin-top: 20px;
+  align-self: flex-start; /* Align button to the left */
+}
+
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.aidefaultcustomblock1-container > .aidefaultcustomblock1-wrapper > .block.aidefaultcustomblock1 .button-container .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070c9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.aidefaultcustomblock1-wrapper picture {
+  display: none;
+}
+
+/* Improved text content alignment */
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 > div > div > p:first-of-type {
+  margin-bottom: 5px; /* Adjust spacing for subtitle */
+}
+
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 > div > div > h2 {
+  margin-top: 5px; /* Adjust spacing for title */
+}
+
+/* Vertically center the text content */
+.aidefaultcustomblock1-wrapper > .aidefaultcustomblock1 > div > div {
+  justify-content: center;
+  height: 100%; /* Ensure the text content is vertically centered */
+}

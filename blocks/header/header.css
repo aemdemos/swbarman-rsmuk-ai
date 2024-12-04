@@ -13,7 +13,11 @@
 
 .header-wrapper .nav-wrapper {
   display: flex;
+<<<<<<< Updated upstream
   justify-content: center;
+=======
+  justify-content: space-between;
+>>>>>>> Stashed changes
   align-items: center;
   background-color: white;
   padding: 10px 20px;
@@ -142,7 +146,51 @@ header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::before {
   padding-right: 5px;
 }
 
+<<<<<<< Updated upstream
 /* Dropdown styling */
+=======
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"] {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::after {
+  display: none; /* Ensure the duplicate text doesn't appear */
+}
+
+.nav-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0071bc; /* Blue background */
+  padding: 0 20px;
+  position: relative;
+  z-index: 2; /* Ensure it appears above the blue bar */
+}
+
+.nav-tools ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  white-space: nowrap; /* Ensure text doesn't break into multiple lines */
+}
+
+.nav-tools li {
+  margin: 0;
+}
+
+.nav-tools a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-tools a:hover {
+  text-decoration: underline;
+}
+
+>>>>>>> Stashed changes
 header nav .nav-sections .nav-drop ul {
   display: none;
   position: absolute;
@@ -174,3 +222,144 @@ header nav .nav-sections .nav-drop ul li a {
 header nav .nav-sections .nav-drop ul li a:hover {
   text-decoration: underline;
 }
+<<<<<<< Updated upstream
+=======
+
+.header-wrapper > .block.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.header-wrapper .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 20px;
+  max-width: 1264px;
+  width: 100%;
+  position: fixed;
+  top: 20px;
+  z-index: 2;
+}
+
+.header-wrapper .nav-tools {
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.nav-tools ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.header-wrapper .extra-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-wrapper .extra-links a:hover {
+  text-decoration: underline;
+}
+
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"] {
+  padding-right: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-sections li a[href="https://www.rsmuk.com/search"]::after {
+  display: none; /* Ensure the duplicate text doesn't appear */
+}
+
+.nav-tools ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  white-space: nowrap; /* Ensure text doesn't break into multiple lines */
+}
+
+header nav .nav-sections ul {
+  gap: 10px; /* Reduce the gap between navigation links */
+}
+
+.header-wrapper .nav-tools ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  justify-content: center;
+}
+
+.nav-tools .default-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-tools .default-content-wrapper > ul:first-of-type {
+  margin-right: auto;
+}
+
+.nav-tools .default-content-wrapper > ul:last-of-type {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-wrapper .nav-tools .default-content-wrapper > ul:first-of-type > li:first-of-type {
+  margin-left: 0;
+}
+
+.header-wrapper .nav-tools .default-content-wrapper > ul:last-of-type > li {
+  margin-right: 0;
+}
+
+.header-wrapper .nav-tools .default-content-wrapper > ul:first-of-type > li {
+  margin-left: 0;
+}
+
+.header-wrapper .nav-tools .default-content-wrapper > ul:first-of-type > li:first-child {
+  margin-right: auto;
+}
+
+.header-wrapper .nav-tools .default-content-wrapper > ul:last-of-type > li:last-child {
+  margin-left: auto;
+}
+
+/* Ensure proper alignment of the top bar elements */
+.nav-tools .default-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-tools .default-content-wrapper > ul:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-tools .default-content-wrapper > ul:last-of-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+>>>>>>> Stashed changes

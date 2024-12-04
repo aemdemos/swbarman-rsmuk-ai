@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 .aicards1-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -6,11 +7,15 @@
 }
 
 .aicards1 > ul {
+=======
+.aicards1-wrapper > .aicards1 > ul {
+>>>>>>> Stashed changes
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+<<<<<<< Updated upstream
   gap: 20px; /* Adjust gap as needed */
 }
 
@@ -81,4 +86,66 @@
 
 .aicards1 .aicards1-card-body .button:hover {
   background: rgba(255, 255, 255, 0.2); /* Add subtle hover effect */
+=======
+  gap: 10px; /* Further reduced gap between flex items */
+  justify-content: space-between; /* Ensure items are evenly spaced */
+}
+
+.aicards1-wrapper > .aicards1 > ul > li {
+  position: relative;
+  width: calc(50% - 10px); /* Adjust width to account for further reduced gap */
+  overflow: hidden;
+  border: none; /* Remove border */
+  background-color: transparent; /* Remove background color */
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-body {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); /* Further reduced text shadow */
+  max-width: 80%;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  font-size: var(--body-font-size-xs); /* Adjust font size */
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-body h2, 
+.aicards1-wrapper > .aicards1 .aicards1-card-body p, 
+.aicards1-wrapper > .aicards1 .aicards1-card-body .button-container {
+  margin: 5px 0; /* Adjust margins */
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-body .button-container {
+  display: flex;
+  justify-content: flex-start; /* Align button to the start */
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-body .button-container .button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 3px 8px; /* Further adjust padding */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: var(--body-font-size-xs); /* Adjust font size */
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-body .button-container .button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.aicards1-wrapper > .aicards1 > ul > li img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Maintain consistent aspect ratio */
+  object-fit: cover;
+>>>>>>> Stashed changes
 }
